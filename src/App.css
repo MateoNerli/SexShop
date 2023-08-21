@@ -1,0 +1,43 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --text: #000000;
+  --background: #dad3fd;
+  --primary: #2d519f;
+  --secondary: #baadfb;
+  --accent: #18113b;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.1);
+  background-color: var(--background);
+}

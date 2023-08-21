@@ -1,0 +1,37 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner-button:first-child {
+  left: 10px;
+}
+
+.banner-button:last-child {
+  right: 10px;
+}
