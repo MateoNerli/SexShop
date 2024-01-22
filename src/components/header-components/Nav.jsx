@@ -18,7 +18,7 @@ export const Nav = () => {
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center">
         <a href="#">
           <img
-            src="/src/images/logo.jpg"
+            src="/src/assets/images/logo.jpg"
             alt="Logo"
             className="w-24 h-auto rounded-full transform transition-all duration-300 ease-in-out hover:scale-110 md:w-32"
           />

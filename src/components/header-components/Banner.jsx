@@ -9,13 +9,13 @@ export const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const images = [
-    "/src/images/banners/banner1.jpg",
-    "/src/images/banners/banner2.jpg",
-    "/src/images/banners/banner3.jpg",
-    "/src/images/banners/banner4.jpg",
-    "/src/images/banners/banner5.jpg",
-    "/src/images/banners/banner6.jpg",
-    "/src/images/banners/banner7.jpg",
+    "src/assets/images/banners/banner1.jpg",
+    "src/assets/images/banners/banner2.jpg",
+    "src/assets/images/banners/banner3.jpg",
+    "src/assets/images/banners/banner4.jpg",
+    "src/assets/images/banners/banner5.jpg",
+    "src/assets/images/banners/banner6.jpg",
+    "src/assets/images/banners/banner7.jpg",
   ];
 
   const nextSlide = () => {
@@ -45,7 +45,7 @@ export const Banner = () => {
       <img
         src={images[currentSlide]}
         alt={`Banner Slide ${currentSlide + 1}`}
-        className="w-full h-[300px] object-cover"
+        className="w-full h-auto max-h-[600px] object-cover"
       />
       <button
         className="bg-gray-500 rounded-full  absolute top-1/2 right-0 -translate-y-1/2 bg-[rgba(0, 0, 0, 0.5)] text-white border-none font-bold p-[10px 15px] pointer p-4"
