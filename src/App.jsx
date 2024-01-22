@@ -1,16 +1,10 @@
 import "./App.css";
-import { Nav } from "./components/header-components/Nav";
-import { NavOpciones } from "./components/header-components/NavOpciones";
-import { Banner } from "./components/header-components/Banner";
+import { Header } from "./components/header";
 
 function App() {
   return (
     <>
-      <header className="header">
-        <Nav />
-        <NavOpciones />
-        <Banner />
-      </header>
+      <Header />
     </>
   );
 }

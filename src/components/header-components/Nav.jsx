@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../styles/style-nav.css";
+// import "../../styles/style-nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -14,32 +14,40 @@ export const Nav = () => {
   };
 
   return (
-    <div className="superiorContainer">
-      <div className="arriba">
-        <a href="#" className="nav__logo">
-          <img src="/src/images/logo.jpg" alt="Logo" />
+    <div className="bg-[#ede5e50] p-4 md:p-8 border-b border-[#ccc] border-solid">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center">
+        <a href="#">
+          <img
+            src="/src/images/logo.jpg"
+            alt="Logo"
+            className="w-24 h-auto rounded-full transform transition-all duration-300 ease-in-out hover:scale-110 md:w-32"
+          />
         </a>
 
-        <div className={`search ${isBuscadorOpen ? "open" : ""}`}>
+        <div
+          className={`search ${
+            isBuscadorOpen ? "open" : ""
+          } flex items-center justify-center w-full md:w-auto mt-4 md:mt-0 md:max-w-[500px]`}
+        >
           <input
             type="text"
             placeholder="¿Qué estás buscando?"
-            className="search__input"
+            className="p-2 w-full md:w-auto border border-solid border-[#ccc] rounded-md"
           />
-          <button className="search__button" onClick={toggleBuscador}>
+          <button
+            className="bg-[#6220fb] text-[#fff] border-none rounded p-2 ml-2 cursor-pointer md:ml-4"
+            onClick={toggleBuscador}
+          >
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </button>
-        </div>
-        <div className="iconos">
-          <button className="btn">
-            <FontAwesomeIcon icon={faCartShopping} className="ico" />
-            <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
-          </button>
-        </div>
-        <div className="but">
-          <a href="">
-            <button className="ingresar">Ingresar</button>
-          </a>
+          <div className="flex align-center sm:pr-0 p-2 ">
+            <button
+              type="button"
+              className="inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-110 hover:rotate-2 hover:bg-pink-700 hover:text-pink-200 hover:shadow-lg active:opacity-85"
+            >
+              <FontAwesomeIcon icon={faCartShopping} />
+            </button>
+          </div>
         </div>
       </div>
     </div>
